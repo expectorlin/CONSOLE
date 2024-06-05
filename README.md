@@ -6,4 +6,46 @@ Vision-Language Navigation (VLN) requires the agent to follow language instructi
 
 ![framework](motivation.png)
 
-Our code will be coming soon!
+## Prerequisites
+
+### Installation
+The environment installation of CONSOLE follows that in [VLN-HAMT](https://github.com/cshizhe/VLN-HAMT).
+1. Follow instructions [here](https://github.com/peteanderson80/Matterport3DSimulator) to install Matterport3D simulators.
+2. Installation requirements:
+```setup
+conda create --name vlnhamt python=3.8.5
+conda activate vlnhamt
+pip install torch==1.7.1+cu101 torchvision==0.8.2+cu101 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+pip install -r requirements.txt
+
+# install timm
+git clone https://github.com/rwightman/pytorch-image-models.git
+cd pytorch-image-models
+git checkout 9cc7dda6e5fcbbc7ac5ba5d2d44050d2a8e3e38d
+```
+
+### Data Preparation
+1. Download features, connectivity files, and trained models following instructions [here](https://github.com/cshizhe/VLN-HAMT).
+2. Download annotation data containing sequential landmarks and landmark cooccurrences from here.
+
+## Navigation
+### VLN Fine-tuning
+
+```setup
+cd finetune_src
+bash scripts/run_r2r.sh
+bash scripts/run_r4r.sh
+```
+
+## Citation
+If you find this work useful, please consider citing:
+```setup
+@article{lin2024correctable,
+  title={Correctable Landmark Discovery Via Large Models for Vision-Language Navigation},
+  author={Lin, Bingqian and Nie, Yunshuang and Wei, Ziming and Zhu, Yi and Xu, Hang and Ma, Shikui and Liu, Jianzhuang and Liang, Xiaodan},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2024},
+  publisher={IEEE}
+}
+```
+
