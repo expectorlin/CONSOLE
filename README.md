@@ -26,7 +26,7 @@ git checkout 9cc7dda6e5fcbbc7ac5ba5d2d44050d2a8e3e38d
 
 ### Data Preparation
 1. Download features, connectivity files, and trained models following instructions [here](https://github.com/cshizhe/VLN-HAMT).
-2. Download annotation data containing sequential landmarks and landmark cooccurrences from [here](https://www.dropbox.com/scl/fo/hg9qpjeou0xqy93pdl94l/AL5bgTaVVi-b8epctRA4HBw?rlkey=g8bc5fynsfepw9zxk7egfp6rr&st=3ozqk0iz&dl=0).
+2. Download annotation data containing sequential landmarks and landmark cooccurrences from [here](https://drive.google.com/drive/folders/15ofyBXUHrqklos7e6Gptn5fXleVjS7Hg?usp=sharing).
 
 ## Navigation
 ### VLN Fine-tuning
